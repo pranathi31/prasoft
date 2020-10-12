@@ -1,0 +1,48 @@
+<form>
+    <div fxLayout="column ">
+        <mat-card class="c1" style="background-color:rgb(198, 225, 236)">
+            <div class="row m-3" >
+                <div class="col-md-5 offset-md-1 col-sm-12 mt-1 ">
+    <mat-card  class="c2" fxFlex="150">
+        
+            <mat-card-title>
+            Product Description
+            </mat-card-title>
+            <br>
+            <mat-card-content>
+<h1><b>{{productdescription}}</b></h1>
+<b>Run Office on Windows, Mac, Android and IOS
+Always enjoy the latest edition</b>
+</mat-card-content>
+</mat-card>
+</div>
+<div class="col-md-5 col-sm-12 mt-1">
+<mat-card class="c2" fxFlex="150">
+    <br>
+    <br>
+<mat-card-title>
+<b>Quantity</b>
+</mat-card-title>        
+       
+            <mat-card-content>
+                <button type="button" (click)="minus()" mat-flat-button >-</button>
+<input type="text" [value]="quantity" class="size">
+<button type="button" (click)="plus()" mat-flat-button >+</button>
+<h3><b>Price</b>={{price}}</h3>
+<h3><b>18% GST</b>={{gst}}</h3>
+<h3><b>Total Price</b>={{totalprice}}</h3>
+
+            </mat-card-content>
+      
+
+        </mat-card>
+        </div>
+    </div>
+    </mat-card>
+</div> 
+</form>
+<br>
+
+            
+            
+<br>

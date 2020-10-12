@@ -1,0 +1,112 @@
+<div class="background">
+
+<br>
+<br>
+<h1 style="text-align: center;"><b>{{productname}}</b></h1>
+<hr>
+
+<form>
+    <mat-card>
+<mat-card-content align="center">
+    <mat-form-field appearance="fill">
+   <b> <mat-radio-group aria-label="Select an option">*Adobe Customer :
+        <mat-radio-button value="1">I am a new Customer</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <mat-radio-button value="2">I am an existing Customer</mat-radio-button>
+      </mat-radio-group></b>
+    </mat-form-field>
+      <br>
+      <br>
+      <mat-form-field appearance="fill">
+      <b>  <mat-label>*Months Of subscription :</mat-label>&nbsp;&nbsp;
+        <select matNativeControl required>
+          <option value="12 months">12 months</option>
+          <option value="13 months">13 months</option>
+          <option value="14 months">14 months</option>
+          <option value="15 months">15 months</option>
+          <option value="16 months">16 months</option>
+          <option value="17 months">17 months</option>
+          <option value="18 months">18 months</option>
+          <option value="19 months">19 months</option>
+          <option value="20 months">20 months</option>
+          <option value="21 months">21 months</option>
+          <option value="22 months">22 months</option>
+          <option value="23 months">23 months</option>
+          <option value="24 months">24 months</option>
+          <option value="25 months">25 months</option>
+          <option value="26 months">26 months</option>
+          <option value="27 months">27 months</option>
+          <option value="28 months">28 months</option>
+          <option value="29 months">29 months</option>
+          <option value="30 months">30 months</option>
+          <option value="31 months">31 months</option>
+          <option value="32 months">32 months</option>
+          <option value="33 months">33 months</option>
+          <option value="34 months">34 months</option>
+          <option value="35 months">35 months</option>
+          <option value="36 months">36 months</option>
+        </select></b>
+      </mat-form-field> <br><br>
+      <mat-form-field>
+        <b>  Enter Existing Adobe VIP : </b>
+        <input type="text" placeholder="Adobe VIP">
+      </mat-form-field>
+      <br>
+      <br>
+      <mat-form-field>
+          <b>Quantity : </b>
+          <button type="button" (click)="minus()" mat-flat-button >-</button>
+<input type="text" [value]="quantity" class="size">
+<button type="button" (click)="plus()" mat-flat-button >+</button>
+
+      </mat-form-field>
+      <br>
+      <br>
+      <mat-form-field >
+        <b>  *Provide your Business E-mail : </b>
+        <input type="text" placeholder="example:xyz@prasoft.in">
+      </mat-form-field>
+      
+      <br>
+
+      
+      <mat-card-actions align="center" class="mt-2">
+          <button mat-raised-button color="primary" >Add To Cart </button>
+      </mat-card-actions>
+</mat-card-content>
+    </mat-card>
+</form>
+<br>
+<br>
+<mat-card>
+<h1 style="text-align: center;"><b>Description</b></h1>
+<hr>
+<br>
+<mat-card-content class="content">
+<p><b>{{productdescription}}</b></p>
+
+</mat-card-content>
+</mat-card>
+<br>
+<br>
+<div class="video">
+  <iframe width="100%" height="615" [src]="url" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="image">
+  <img src="{{path}}" width="100%">
+</div>
+<br>
+<br>
+<!--youtube-player
+#player
+[videoId]="videoId"
+(ready)="onReady($event)"
+(stateChange)="onStateChange($event)"
+>
+
+</youtube-player-->
+<br>
+<br>
+<br>
+
+</div>

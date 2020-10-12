@@ -1,0 +1,42 @@
+<div class="background">
+  <br>
+  
+  <h1 style="text-align: center;"><b>Business Premium</b></h1>
+  
+  <div fxlayout="col">
+    <div class="row m-2">
+      <div class=" col-md-6 col-sm-12 mt-2">
+      <mat-card fxFlex="100" style="outline: solid; height: 300px;" >
+  <mat-card-title>
+  <b> Product Description</b>
+  </mat-card-title>
+  <br>
+  <br>
+  <mat-card-content>
+    <h1>Fully installed Office apps for PC and Mac</h1>
+    Other benifits
+    <ul>
+      <li>	Help secure business data on personal and company-owned devices  </li>
+      <li>	Guard against unsafe attachments, suspicious links, and other malware   </li>
+      <li>	Manage new PCs and devices faster and more easily than ever </li>
+    </ul>
+
+  </mat-card-content>
+      </mat-card>
+      </div>
+      
+        <div class=" col-md-6 col-sm-12 mt-2">
+      <mat-card fxFlex="100" style="outline: solid; height: 300px;">
+       <button type="button" (click)="minus()" mat-flat-button >-</button>
+       <input type="text" [value]="quantity" class="size">
+       <button type="button" (click)="plus()" mat-flat-button >+</button>
+       <h3><b>Price</b>={{price}} INR</h3>
+       <h3><b>18% GST</b>={{gst}} INR</h3>
+       <h3><b>Total Price</b>={{totalprice}} INR</h3>
+     </mat-card> 
+     </div>
+     </div>
+     </div>
+     <br>
+  
+  </div>

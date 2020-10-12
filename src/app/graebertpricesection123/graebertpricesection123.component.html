@@ -1,0 +1,115 @@
+<div class="background"> 
+    <br>
+  <h1 style="text-align: center;"><b>Graebert</b></h1>
+  <br>
+  <h2 style="text-align: center;"><b>The ARES Trinity Of CAD Software</b></h2>
+  <h2 style="text-align: center;"><b>ARES Commander  |  ARES Kudo  |  ARES Touch</b></h2>
+  <br>
+  <h3 style="text-align: center;"><b>CREATE AND MODIFY DWG DRAWINGS ANYWHERE, ON ANY DEVICE</b></h3>
+
+  <mat-tab-group mat-align-tabs="center" animationDuration="2000ms" style="margin-left: 30px; margin-right: 30px;" >
+      <mat-tab label="Annual Plan">
+         <div fxlayout="col">
+          <div class="row m-2">
+            <div class=" col-md-6 col-sm-12 mt-2">
+           <mat-card fxFlex="100" style="outline: solid; height: 500px;" >
+  <mat-card-title>
+     <b> Product Description</b>
+  </mat-card-title>
+  <br>
+  <br>
+  <mat-card-content>
+    <b> More savings for those who plan ahead – All included for 3 years</b>
+    A three years, all-inclusive license for ARES Commander, including all updates and Email support + ARES Touch for your smartphones and tablets and ARES Kudo (Cloud version).
+Fully covered for the next years: instead of buying an annual plan, you just pay once upfront for the first three years in your active annual subscription. You remain free not to renew after and the price includes all the updates and the Email support for all the duration of your plan.
+
+    <br>
+    <b> NB: The method to renew an existing Plan or extend a subscription is simply to buy a new one . </b>
+    Add another Annual Plan in advance and it will add 12 months to your subscription. The same is true for the three years plan. You can also assign multiple Plans for the same user and they will be accumulated to get 2 years, 3 years, 6 years… etc.
+  </mat-card-content>
+           </mat-card>
+           </div>
+          
+            <div class=" col-md-6 col-sm-12 mt-2">
+           <mat-card fxFlex="100" style="outline: solid; height: 500px;">
+            <button type="button" (click)="minus()" mat-flat-button >-</button>
+            <input type="text" [value]="quantity" class="size">
+            <button type="button" (click)="plus()" mat-flat-button >+</button>
+            <h3><b>Price</b>={{price}} INR</h3>
+            <h3><b>18% GST</b>={{gst}} INR</h3>
+            <h3><b>Total Price</b>={{totalprice}} INR</h3>
+          </mat-card> 
+          </div>
+          </div>
+          </div>
+          </mat-tab>
+      <mat-tab label="three Years Plan"><div fxlayout="col">
+        <div class="row m-2">
+          <div class=" col-md-6 col-sm-12 mt-2">
+          <mat-card fxFlex="100" style="outline: solid; height: 500px;" >
+  <mat-card-title>
+    <b> Product Description</b>
+  </mat-card-title>
+  <br>
+  <br>
+  <mat-card-content>
+    <b> Simply cost-effective – All included for 1 year</b>
+    An annual, all-inclusive license for ARES Commander, including all updates and Email support + ARES Touch for your smartphones and tablets and ARES Kudo (Cloud version).
+    The highest return on investment: instead of buying a perpetual license you just need to pay some amount to get a full license for one year. You remain free not to renew after and the price includes all the updates and the Email support for all the duration of your plan.
+    <br>
+    <b> NB: The method to renew an Annual Plan is simply to buy a new one. </b>
+     If needed, you can add another Annual Plan in advance and it will add 12 months to your subscription. You can also assign multiple Annual Plans for the same user and they will be accumulated to get 2 years, 3 years… etc.
+  </mat-card-content>
+          </mat-card>
+          </div>
+          
+            <div class=" col-md-6 col-sm-12 mt-2">
+          <mat-card fxFlex="100" style="outline: solid; height: 500px;">
+            <button type="button" (click)="sub()" mat-flat-button >-</button>
+            <input type="text" [value]="quantity2" class="size" >
+            <button type="button" (click)="add()" mat-flat-button >+</button>
+            <h3><b>Price</b>={{price2}} INR</h3>
+            <h3><b>18% GST</b>={{gst2}} INR</h3>
+            <h3><b>Total Price</b>={{totalprice2}} INR</h3>
+         </mat-card> 
+         </div> 
+        </div>
+      </div></mat-tab>
+         <mat-tab label="Perpetual License"><div fxlayout="col">
+          <div class="row m-2">
+            <div class=" col-md-6 col-sm-12 mt-2">
+            <mat-card fxFlex="100" style="outline: solid; height: 400px;" >
+    <mat-card-title>
+      <b> Product Description</b>
+    </mat-card-title>
+    <br>
+    <br>
+    <mat-card-content>
+      
+      Perpetual license of ARES Commander + 1 year of subscription A full license without time limitation for the desktop version ARES Commander. Includes a one year subscription for updates  and Email support. ARES Touch (Mobile version) and ARES Kudo (Cloud version) are included for one year as part of the subscription of ARES Commander.
+      After one year, you will be free to renew or not the subscription. If you don‘t renew the subscription, you can keep using the version you purchased of ARES Commander and buy later an upgrade (see below) but, in the meantime, you would lose access to the editing features of ARES Touch and ARES Kudo that are included in the subscription.
+      
+    </mat-card-content>
+            </mat-card>
+            </div>
+            
+              <div class=" col-md-6 col-sm-12 mt-2">
+            <mat-card fxFlex="100" style="outline: solid; height: 400px;">
+              <button type="button" (click)="s()" mat-flat-button >-</button>
+              <input type="text" [value]="quantity3" class="size" >
+              <button type="button" (click)="a()" mat-flat-button >+</button>
+              <h3><b>Price</b>={{price3}} INR</h3>
+              <h3><b>18% GST</b>={{gst3}} INR</h3>
+              <h3><b>Total Price</b>={{totalprice3}} INR</h3>
+           </mat-card> 
+           </div> 
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  
+  <br>
+  <br>
+  
+  
+  </div>

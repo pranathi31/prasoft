@@ -1,0 +1,137 @@
+<div class="background">
+<div class="img">
+    <img src="./assets/WPS Banner.jpg" width="100%">
+</div>
+<br>
+<h1  [ngStyle]="titleStyles" style="text-align: center;"><b>Cross-Platform Office Suit</b></h1>
+<br>
+<form >
+    <!-- <mat-grid-list cols="6" class="click" gutterSize="10px">
+        <mat-grid-tile>
+      <button> <img src="./assets/wpsofmac.png" name="mac" value="mac" width="100%"></button>
+      
+    </mat-grid-tile>
+    <mat-grid-tile>
+       <button> <img src="./assets/wpsofpc.png" name="windows" value="windows" width="100%"></button>
+       
+     </mat-grid-tile>
+     <mat-grid-tile>
+        <button><img src="./assets/wpsofandroid.png" name="android" value=android width="100%"></button>
+        
+     </mat-grid-tile>
+     <mat-grid-tile>
+        <button> <img src="./assets/wpsofios.png" name="ios" value="ios" width="100%"> </button>
+        
+     </mat-grid-tile>
+     <mat-grid-tile>
+        <button> <img src="./assets/wpsoflinux.png" name="linux" value="linux" width="100%"></button>
+        
+     </mat-grid-tile>
+     <mat-grid-tile>
+        <button> <img src="./assets/wpsofweb.png" name="web" value="web" width="100%"> </button>
+        
+     </mat-grid-tile>
+    </mat-grid-list>
+    -->
+    <div class="card-group ">
+        <div class="row" style="align-content: center;">
+          <div class="col-md-4 col-sm-12 ">
+       <div class="card " >
+        <button style="background-color: white;"><img src="./assets/wpsofmac.png" name="mac" value="mac" style="width:200px;height:200px;"></button>
+       </div>
+       </div>
+       <div class="col-md-4 col-sm-12">
+        <div class="card ">
+         <button style="background-color: white;"><img  src="./assets/wpsofpc.png" name="windows" value="windows" style="width:200px;height:200px;"></button>
+        </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="card ">
+             <button style="background-color: white;"><img src="./assets/wpsofandroid.png" name="android" value="android" style="width:200px;height:200px;"></button>
+            </div>
+            </div>
+            <div class="col-md-4 col-sm-12 ">
+                <div class="card ">
+                 <button style="background-color: white;"><img src="./assets/wpsofios.png" name="ios" value="ios" style="width:200px;height:200px;"></button>
+                </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                 <div class="card ">
+                  <button style="background-color: white;"><img  src="./assets/wpsoflinux.png" name="linux" value="linux" style="width:200px;height:200px;"></button>
+                 </div>
+                 </div>
+                 <div class="col-md-4 col-sm-12">
+                     <div class="card ">
+                      <button style="background-color: white;"><img src="./assets/wpsofweb.png" name="web" value="web" style="width:200px;height:200px;"></button>
+                     </div>
+                     </div>
+    
+       </div>
+      </div> 
+   
+</form>
+<br>
+
+    <h1 [ngStyle]="titleStyles"  style="text-align: center;" ><B>Products :</B></h1>
+    <div fxLayout="column" >
+        
+        <mat-card class="c1"  style="background-color:lightgray;">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 mb-2 offset-md-2" style="align-content: center;">
+            <mat-card class="c2"  style="width:100%;height:300px;" >
+                <mat-card-title class="mt-3">
+                   {{wpsname}}
+                </mat-card-title>
+                <mat-card-sub-title>for business</mat-card-sub-title>
+                <br>
+                <mat-card-content align="center">
+                    <h1 style="color: tomato;"> {{wpsprice}}</h1>
+<!--button type="button" (click)="minus()" mat-flat-button >-</button>
+<input type="text" [value]="quantity" class="size">
+<button type="button" (click)="plus()" mat-flat-button >+</button-->
+</mat-card-content>
+                <mat-card-actions align="center">
+                    <button mat-raised-button color="primary" routerLink="/wpsbuy" routerLinkActive="active" (click)="wpsbuynow()">Buy now</button>
+                </mat-card-actions>
+            </mat-card>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-2">
+            <mat-card class="c2"  style="width:100%;height:300px;">
+                <mat-card-title class="mt-3">{{busname}}</mat-card-title>
+                <mat-card-sub-title>one time license</mat-card-sub-title>
+                <br>
+                <mat-card-content align="center">
+                    <h1 style="color: tomato;"> {{busprice}}</h1>
+                    <!--button type="button" (click)="m()" mat-flat-button>-</button>
+<input type="text" [value]="q" class="size">
+<button type="button" (click)="p()" mat-flat-button>+</button-->
+                </mat-card-content>
+                <mat-card-actions align="center">
+                    <button mat-raised-button color="primary" routerLink="/wpsbuy" routerLinkActive="active" (click)="busfor()">Buy now</button>
+                </mat-card-actions>
+            </mat-card>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-2">
+            <mat-card class="c2" style="width:100%;height:300px;">
+                <mat-card-title class="mt-3">{{profname}}</mat-card-title>
+                <mat-card-sub-title>one time license</mat-card-sub-title>
+
+                <br>
+                <mat-card-content align="center">
+                   <h1 style="color: tomato;"> {{profprice}}</h1>
+                   <!--button type="button" (click)="subtract()" mat-flat-button>-</button>
+<input type="text" [value]="qt" class="size">
+<button type="button" (click)="add()" mat-flat-button>+</button-->
+                </mat-card-content>
+                <mat-card-actions align="center">
+                    <button mat-raised-button color="primary" routerLink="/wpsbuy" routerLinkActive="active" (click)="professional()">Buy now</button>
+                </mat-card-actions>
+            </mat-card> 
+           </div>
+        </div>
+          </mat-card>
+          
+        </div>
+        </div>  
+        
+        

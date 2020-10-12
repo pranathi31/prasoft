@@ -1,0 +1,65 @@
+/* 
+/* .mat-toolbar
+{
+ justify-content: space-between;
+height:120px;
+
+background-color:white;
+position: sticky;
+position: -webkit-sticky;
+top: 0; 
+ z-index: 1000;
+ position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100% !important;
+} */
+ /* .buttons{
+    padding-right: 120px;
+    justify-content: space-between;
+
+ }
+
+.color
+{
+    background-color:#58595B;
+}
+.searchbutton
+{
+
+    padding-bottom: 10px;
+    color:black;
+
+    outline: none;
+    
+}
+.img
+{
+    padding-right: 300px;
+    justify-content: space-between;
+    
+    
+}
+ 
+
+
+.searchbox
+{
+   
+     
+    border: none; 
+border-width: 0; 
+box-shadow: none;
+background-color: lightgray;
+height:40px;
+width: 180px
+}
+
+.account
+{
+    color:black;
+    
+    outline: none
+    
+}  */

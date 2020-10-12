@@ -1,0 +1,26 @@
+mat-grid-tile
+{
+background-color:white;
+}
+.tile2{
+    background-color:white;
+    
+}
+
+
+
+.background
+{
+    background:lightgray;
+    position: sticky;
+    left: 0;
+
+    width: 100% !important;
+}
+.latestupdates{
+    width: fixed;
+}
+.c1
+{
+    background:transparent;
+}

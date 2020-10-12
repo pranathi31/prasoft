@@ -1,0 +1,25 @@
+.mat-card{
+    height:330px;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.size
+{
+    width: 20px;
+}
+.content
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.background
+{
+    background-color: lightgray;
+}
+.video
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
